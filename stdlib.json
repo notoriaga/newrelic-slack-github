@@ -4,20 +4,20 @@
   "timeout": 10000,
   "connector": false,
   "events": {
-    "functions/events/newrelic/incident/opened.js": {
-      "name": "newrelic.incident.opened",
+    "newrelic.incident.opened": {
+      "filename": "events/newrelic/incident/opened",
       "subtype": {
         "policy_id": 631460
       }
     },
-    "functions/events/slack/interactive_message/incident_action.js": {
-      "name": "slack.interactive_message",
+    "slack.interactive_message": {
+      "filename": "events/slack/interactive_message/incident_action",
       "subtype": {
         "callback_id": "incident_action"
       }
     },
-    "functions/events/slack/dialog_submission/open_issue.js": {
-      "name": "slack.dialog_submission",
+    "slack.dialog_submission": {
+      "filename": "events/slack/dialog_submission/open_issue",
       "subtype": {
         "callback_id": "open_issue"
       }
