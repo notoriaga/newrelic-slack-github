@@ -3,24 +3,30 @@
   "version": "0.0.0",
   "timeout": 10000,
   "connector": false,
-  "events": {
-    "newrelic.incident.opened": {
-      "filename": "events/newrelic/incident/opened",
-      "subtype": {
-        "policy_id": 631460
+  "events": [
+    {
+      "newrelic.incident.opened": {
+        "filename": "events/newrelic/incident/opened",
+        "subtype": {
+          "policy_id": 631460
+        }
       }
     },
-    "slack.interactive_message": {
-      "filename": "events/slack/interactive_message/incident_action",
-      "subtype": {
-        "callback_id": "incident_action"
+    {
+      "slack.interactive_message": {
+        "filename": "events/slack/interactive_message/incident_action",
+        "subtype": {
+          "callback_id": "incident_action"
+        }
       }
     },
-    "slack.dialog_submission": {
-      "filename": "events/slack/dialog_submission/open_issue",
-      "subtype": {
-        "callback_id": "open_issue"
+    {
+      "slack.dialog_submission": {
+        "filename": "events/slack/dialog_submission/open_issue",
+        "subtype": {
+          "callback_id": "open_issue"
+        }
       }
     }
-  }
+  ]
 }
