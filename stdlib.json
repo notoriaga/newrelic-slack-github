@@ -1,0 +1,26 @@
+{
+  "name": "steve/newrelic-slack-github",
+  "version": "0.0.0",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/newrelic/incident/opened.js": {
+      "name": "newrelic.incident.opened",
+      "subtype": {
+        "policy_id": 631460
+      }
+    },
+    "functions/events/slack/interactive_message/incident_action.js": {
+      "name": "slack.interactive_message",
+      "subtype": {
+        "callback_id": "incident_action"
+      }
+    },
+    "functions/events/slack/dialog_submission/open_issue.js": {
+      "name": "slack.dialog_submission",
+      "subtype": {
+        "callback_id": "open_issue"
+      }
+    }
+  }
+}

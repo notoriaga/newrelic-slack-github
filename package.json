@@ -1,0 +1,8 @@
+{
+  "name": "newrelic-slack-github",
+  "author": "Steve Meyer <steven@stdlib.com>",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest"
+  }
+}
